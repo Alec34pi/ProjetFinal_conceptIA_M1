@@ -5,6 +5,7 @@ Endpoints: /health, /predict/single, /predict/batch, /model/info
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+from flasgger import Swagger
 import joblib
 import pandas as pd
 import sys
@@ -21,6 +22,7 @@ from src.predict import ChurnPredictor
 # Configuration
 app = Flask(__name__)
 CORS(app)  # Autoriser les requêtes cross-origin
+swagger = Swagger(app)
 
 # Chemins vers les modèles
 MODEL_PATH = Path(__file__).parent.parent / 'models' / 'best_model.pkl'
