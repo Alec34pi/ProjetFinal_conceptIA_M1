@@ -48,7 +48,3 @@ psutil==5.9.6
 jupyter==1.0.0
 ipywidgets==8.1.1
 nbformat==5.9.2
-
-# flasgger
-flasgger==0.9.7.1
-gunicorn==21.2.0
