@@ -1,5 +1,5 @@
 # Image de base Python légère
-FROM python:3.10-slim
+FROM python:3.11-slim
 
 # Informations de l'image
 LABEL maintainer="Data Science Team"

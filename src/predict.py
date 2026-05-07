@@ -72,6 +72,7 @@ class ChurnPredictor:
             X = pd.DataFrame([X])
         
         # Vérifier les features
+        
         if self.feature_names:
             # S'assurer que toutes les features attendues sont présentes
             missing_features = set(self.feature_names) - set(X.columns)
